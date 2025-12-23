@@ -1,4 +1,8 @@
 # H3! 
-This is a simple python script that can be used to **run shell commands** that have b0th server and client relationships.
-**Like a little worm!** You can take this program and use it or modify it. H3ve fun!
+This project was developed to technically understand how phishing attacks work.
+It is built from scratch with the goal of learning the underlying logic of phishing techniques and improving security awareness.
 
+⚠️ For educational, research, and defensive purposes only.
+Any malicious or illegal use of this software is strictly prohibited. The developer is not responsible for any misuse of this project.
+
+You are free to explore, modify, or extend the project for learning purposes.
