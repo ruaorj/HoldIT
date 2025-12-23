@@ -11,14 +11,9 @@ You are free to explore, modify, or extend the project for learning purposes. Ha
 
 # How to use
 
-# 1. Give execute permission
-chmod +x setup.sh main.sh
-
-# 2. Install required dependencies
-./setup.sh
-
-# 3. Run the main script
-./main.sh
+- chmod +x setup.sh main.sh
+- ./setup.sh
+- ./main.sh
 
 ### Find Me on
 <a href="https://linktr.ee/Mass4cre_P0int" target="_blank"><img src="https://img.shields.io/badge/Socials-grey?style=for-the-badge&logo=linktree"></a>
