@@ -13,8 +13,9 @@ You are free to explore, modify, or extend the project for learning purposes. Ha
 
 - chmod +x setup.sh main.sh
 - ./setup.sh
+- Place your ngrok token inside main.sh
+<img width="531" height="228" alt="Screenshot_20251226_064129" src="https://github.com/user-attachments/assets/955bf214-a995-45be-b363-eb1467225237" />  
 - ./main.sh
-
 ### Find Me on
 <a href="https://linktr.ee/Mass4cre_P0int" target="_blank"><img src="https://img.shields.io/badge/Socials-grey?style=for-the-badge&logo=linktree"></a>
 <a href="https://github.com/ruaorj" target="_blank"><img src="https://img.shields.io/badge/Github-blue?style=for-the-badge&logo=github"></a>
