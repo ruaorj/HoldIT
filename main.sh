@@ -47,7 +47,7 @@ basicSettings() {
     sudo cp -r $1 /var/www/html/
     sudo chmod 777 /var/www/html/pass.txt
     sudo systemctl start apache2 &
-    ngrok config add-authtoken 2u9oXgeX6j8I0lhMA8WXxcRahLf_4mqMA3UbuV81RGZ4H9pqP
+    ngrok config add-authtoken "Your-Token"
     clear
     echo -e "$icon"
     echo "Wait patiently for the fish to be hooked..."
